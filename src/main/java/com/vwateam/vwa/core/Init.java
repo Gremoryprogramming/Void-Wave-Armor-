@@ -9,9 +9,9 @@ import static com.vwateam.vwa.VoidWaveArmorsPlus.MOD_ID;
 
 public class Init{
     // ITEM INIT
-    public static DeferredRegister<Item> ITEMS = DeferredRegister.create( ForgeRegistries.ITEMS, MOD_ID );
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create( ForgeRegistries.ITEMS, MOD_ID );
 
     // BLOCK INIT
-    public static DeferredRegister<Block> BLOCKS = DeferredRegister.create( ForgeRegistries.BLOCKS, MOD_ID );
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create( ForgeRegistries.BLOCKS, MOD_ID );
 
 }
