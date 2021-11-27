@@ -1,7 +1,11 @@
 package com.vwateam.vwa.core;
 
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.Item;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -13,5 +17,8 @@ public class Init{
 
     // BLOCK INIT
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create( ForgeRegistries.BLOCKS, MOD_ID );
+
+    public static final RegistryObject<Block> VOID_WAVE_BLOCK = BLOCKS.register("void_wave_block",
+            () -> new Block(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_GRAY).strength(5f, 6f)));
 
 }
