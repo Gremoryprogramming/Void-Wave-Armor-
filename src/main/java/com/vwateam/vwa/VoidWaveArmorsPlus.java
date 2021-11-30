@@ -7,8 +7,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import static com.vwateam.vwa.core.Init.BLOCKS;
-import static com.vwateam.vwa.core.Init.ITEMS;
+import static com.vwateam.vwa.core.Init.*;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(VoidWaveArmorsPlus.MOD_ID)
@@ -24,6 +23,7 @@ public class VoidWaveArmorsPlus
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ITEMS.register(bus);
+        TILE_ENTITY_TYPE.register(bus);
         BLOCKS.register(bus);
 
         // Register ourselves for server and other game events we are interested in
