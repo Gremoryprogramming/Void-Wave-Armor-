@@ -8,6 +8,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,6 +20,8 @@ public class Init{
     // ITEM INIT
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create( ForgeRegistries.ITEMS, MOD_ID );
 
+    public static final RegistryObject<Item> WAVE_CRYSTAL = ITEMS.register("wave_crystal",
+            () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MISC)));
     // BLOCK INIT
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create( ForgeRegistries.BLOCKS, MOD_ID );
 
