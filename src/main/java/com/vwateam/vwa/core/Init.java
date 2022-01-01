@@ -22,6 +22,7 @@ public class Init{
 
     public static final RegistryObject<Item> WAVE_CRYSTAL = ITEMS.register("wave_crystal",
             () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MISC)));
+
     // BLOCK INIT
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create( ForgeRegistries.BLOCKS, MOD_ID );
 
