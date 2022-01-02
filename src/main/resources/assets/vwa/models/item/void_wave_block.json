@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "vwa:block/void_wave_block_top_bottom",
+    "bottom": "vwa:block/void_wave_block_top_bottom",
+    "side": "vwa:block/void_wave_block0"
+  }
+}
