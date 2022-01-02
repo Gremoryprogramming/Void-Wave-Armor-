@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "wave_crystal_level=0": {
+      "model": "vwa:block/void_wave_block0"
+    },
+    "wave_crystal_level=1": {
+      "model": "vwa:block/void_wave_block1"
+    },
+    "wave_crystal_level=2": {
+      "model": "vwa:block/void_wave_block2"
+    },
+    "wave_crystal_level=3": {
+      "model": "vwa:block/void_wave_block3"
+    },
+    "wave_crystal_level=4": {
+      "model": "vwa:block/void_wave_block4"
+    }
+  }
+}
