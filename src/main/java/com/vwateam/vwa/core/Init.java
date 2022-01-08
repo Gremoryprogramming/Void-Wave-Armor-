@@ -3,10 +3,8 @@ package com.vwateam.vwa.core;
 import com.vwateam.vwa.VoidWaveArmorsPlus;
 import com.vwateam.vwa.common.block.VoidWaveBlock;
 import com.vwateam.vwa.common.te.VoidWaveBlockTileEntity;
-import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
+import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.tileentity.TileEntityType;
@@ -34,5 +32,10 @@ public class Init{
 
     public static final RegistryObject<TileEntityType<VoidWaveBlockTileEntity>> VOID_WAVE_BLOCK_TILE_ENTITY_TYPE = TILE_ENTITY_TYPE
             .register("void_wave_block", () -> TileEntityType.Builder.of(VoidWaveBlockTileEntity::new, Init.VOID_WAVE_BLOCK.get()).build(null));
+
+    //CONTAINER TYPES INIT
+    public static final DeferredRegister<ContainerType<?>> CONTAINER_TYPE = DeferredRegister
+            .create(ForgeRegistries.CONTAINERS, MOD_ID);
+
 
 }
